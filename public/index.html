@@ -336,5 +336,29 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyC5eX2pQ8hpoG7mZa7KsXYplD5eANiy-8A",
+        authDomain: "tedxjacobsuniversity-22.firebaseapp.com",
+        projectId: "tedxjacobsuniversity-22",
+        storageBucket: "tedxjacobsuniversity-22.appspot.com",
+        messagingSenderId: "968212975952",
+        appId: "1:968212975952:web:5e36ded31e8580d76cdc55",
+        measurementId: "G-XX0TPW05FM",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
