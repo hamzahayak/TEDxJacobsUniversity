@@ -98,7 +98,13 @@
           <div class="d-flex flex-lg-row flex-column">
             <a href="/" class="nav-link page-scroll">About</a>
             <div class="bg-base-color mx-5">
-              <a href="/" class="nav-link page-scroll">Join Team</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://docs.google.com/forms/d/1Oud_a0zqJV4dqKDmZlLo_z9yd5rtMFyzgc_WwfeHNGQ"
+                class="nav-link page-scroll"
+                >Join Team</a
+              >
             </div>
             <!-- <a href="/our-team/" class="nav-link line-height-unset">Our Team</a>
             <a href="/contact/" class="nav-link line-height-unset"
@@ -172,7 +178,7 @@
     <!-- //Section - Home End -->
 
     <!-- Section - About Start -->
-    <section id="about" class="catamaran bg-white">
+    <section id="about" class="catamaran bg-white h-auto">
       <div class="d-flex h-100 p-5 flex-lg-row flex-column align-items-center">
         <div class="container flex-column">
           <h2 class="font-family-alt fw-bold fs-1">About the event</h2>
@@ -207,11 +213,7 @@
         </div>
         <div style="width: 50px; height: 0px"></div>
         <div class="container">
-          <div
-            id="carouselExampleSlidesOnly"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
+          <div class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
@@ -250,10 +252,17 @@
       data-image-src="res/images/bg-parallax.jpg"
       data-natural-width="2048"
       data-natural-height="1365"
-      data-android-fix="false"
       class="h-50 no-padding overflow-hidden w-100"
     >
-      <div class="d-flex h-100 align-items-center justify-content-center">
+      <div
+        class="
+          d-flex
+          flex-column
+          h-100
+          align-items-center
+          justify-content-center
+        "
+      >
         <div class="countdown-timer align-items-end" id="countdown">
           <div class="days">
             <span class="value" id="daysValue">00</span>
@@ -272,6 +281,14 @@
             <span class="label">SEC</span>
           </div>
         </div>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://docs.google.com/forms/d/1Oud_a0zqJV4dqKDmZlLo_z9yd5rtMFyzgc_WwfeHNGQ"
+          class="btn btn-base-color text-white mt-5"
+        >
+          JOIN TEAM
+        </a>
       </div>
 
       <!-- //.row -->
