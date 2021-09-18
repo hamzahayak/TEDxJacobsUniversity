@@ -108,14 +108,19 @@ p {
   color: white;
 }
 
-.arrow-down:hover {
-  color: #e62b1e;
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /*
   Section - Home
   --------------
 */
+
+.arrow-down:hover {
+  color: #e62b1e;
+}
 
 .text-testimonial {
   font-size: 15px;
