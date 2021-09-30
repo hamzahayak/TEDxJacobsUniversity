@@ -108,14 +108,19 @@ p {
   color: white;
 }
 
-.arrow-down:hover {
-  color: #e62b1e;
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /*
   Section - Home
   --------------
 */
+
+.arrow-down:hover {
+  color: #e62b1e;
+}
 
 .text-testimonial {
   font-size: 15px;
@@ -124,6 +129,7 @@ p {
 .separator-line {
   background-color: #e62b1e;
   height: 8px;
+  width: 100px;
 }
 
 .arrow-down {
@@ -211,12 +217,24 @@ p {
 }
 
 /*
-  Section - Team
+  Section - Teams
   --------------
 */
 
 .member-box {
   margin-bottom: 24px;
+}
+
+.card {
+  width: 18rem;
+  margin: 15px;
+  border-color: #e62b1e;
+  border-width: 2px;
+  font-family: "Catamaran", sans-serif;
+}
+
+.card ul {
+  padding: 10px;
 }
 
 /*
