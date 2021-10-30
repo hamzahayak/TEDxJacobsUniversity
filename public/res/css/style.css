@@ -156,7 +156,7 @@ p {
 .bg-section {
   background-image: url("../images/space_bg.jpeg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 
 /* Home BG Parallax */
