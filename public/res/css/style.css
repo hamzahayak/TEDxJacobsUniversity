@@ -67,7 +67,7 @@ p {
   }
 }
 
-.font-family-alt {
+.catamaran {
   font-family: "Catamaran", sans-serif;
 }
 
@@ -149,6 +149,12 @@ p {
   width: 100px;
 }
 
+.separator-line-auto {
+  background-color: #e62b1e;
+  height: 4px;
+  width: auto;
+}
+
 .arrow-down {
   color: gray;
 }
@@ -223,6 +229,13 @@ p {
   --------------
 */
 
+.image-team {
+  width: auto;
+  max-height: 65vh;
+  max-width: 80vw;
+  border-radius: 5px;
+}
+ 
 .member-box {
   margin-bottom: 24px;
 }
