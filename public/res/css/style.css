@@ -224,6 +224,12 @@ p {
   }
 }
 
+.modal-header {
+  border-color: #e62b1e;
+  border-width: 3px;
+}
+
+
 /*
   Section - Teams
   --------------
