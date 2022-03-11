@@ -79,13 +79,13 @@
         </div>
         <div class="row gy-4 gx-5 pt-3 justify-content-center">
           <div class="col-2" style="width: min-content;">
-            <a type="button" class="btn btn-outline-primary bebas text-white"
+            <a type="button" id="ticket-inperson" class="btn btn-outline-primary bebas text-white"
               style="width: 275px; border-color: #e62b1e; background-color: #e62b1e; letter-spacing: 2px;"
               href="https://www.eventbrite.de/e/291815888177" target="_blank" rel="noopener noreferrer">Free
               Tickets<br>(In-person)</a>
           </div>
           <div class="col-2" style="width: min-content;">
-            <a type="button" class="btn btn-outline-primary bebas text-white"
+            <a type="button" id="ticket-stream" class="btn btn-outline-primary bebas text-white"
               style="width: 275px; border-color: #e62b1e; background-color: #e62b1e; letter-spacing: 2px;"
               href="https://www.eventbrite.de/e/292083669117" target="_blank" rel="noopener noreferrer">Free
               Tickets<br>(Live Stream, in Jacobs University)</a>
@@ -336,7 +336,7 @@
   <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
+    import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -355,6 +355,14 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
+
+    function logTicketEvent(name) {
+      logEvent(analytics, name);
+      console.log(name);
+    }
+    document.getElementById('ticket-inperson').addEventListener('click', () => logTicketEvent('ticket-inperson'));
+    document.getElementById('ticket-stream').addEventListener('click', () => logTicketEvent('ticket-stream'));
+
   </script>
 </body>
 
